@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    height: 18px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.password-strength {
+    margin-top: 10px;
+}
+
+.strength-meter {
+    height: 5px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.strength-meter::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: #e74c3c;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.strength-text {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.success-message {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    display: none;
+}
+
+.success-message h2 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.success-message button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.success-message button:hover {
+    background-color: #2980b9;
+}
+
+/* Error states */
+input.error {
+    border-color: #e74c3c;
+}
+
+input.success {
+    border-color: #2ecc71;
+}
